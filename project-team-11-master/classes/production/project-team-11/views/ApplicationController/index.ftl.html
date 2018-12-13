@@ -1,0 +1,186 @@
+<#import "../layout/defaultLayout.ftl.html" as layout>
+<@layout.myLayout "Home page">
+
+
+<!--link for score font-->
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+<!--Player Board(userBoard) block, which contains the grid, grid labels,
+and a title-->
+<div class="userBoard">
+
+    <div id="userTitle" class="boardTitle">
+        <h1>PLAYER</h1>
+    </div>
+
+
+    <table id="player" class="battleGrid">
+    </table>
+
+    <table class="gridCol">
+        <tr><td><b>1</b></td></tr>
+        <tr><td><b>2</b></td></tr>
+        <tr><td><b>3</b></td></tr>
+        <tr><td><b>4</b></td></tr>
+        <tr><td><b>5</b></td></tr>
+        <tr><td><b>6</b></td></tr>
+        <tr><td><b>7</b></td></tr>
+        <tr><td><b>8</b></td></tr>
+        <tr><td><b>9</b></td></tr>
+        <tr><td><b>10</b></td></tr>
+    </table>
+
+    <table class = "gridRow">
+        <td><b>A</b></td>
+        <td><b>B</b></td>
+        <td><b>C</b></td>
+        <td><b>D</b></td>
+        <td><b>E</b></td>
+        <td><b>F</b></td>
+        <td><b>G</b></td>
+        <td><b>H</b></td>
+        <td><b>I</b></td>
+        <td><b>J</b></td>
+    </table>
+</div>
+
+
+<!--Score Area(scoreArea) block, which contains the the ship menu and the score counter.
+The score increments by 1 every time the user presses a block on the opponents board-->
+<div class="scoreArea">
+    <div class="scoreTitle">
+        <H1>Score</H1>
+    </div>
+    <div class = "scoreBox">
+    <span class="centerfloat">
+
+                <span id = "score" style="color:red; font-size: 200%; font-family: 'Orbitron', sans-serif;"></span>
+    </span>
+    </div>
+
+
+
+<!-- Carson to see if we have sunk a ship -->
+    <div class="playerSunkTitle">
+        <H3>Enemy Ships Sunk</H3>
+    </div>
+    <div class = "playerSunkBox">
+    <span class="centerfloat">
+
+                <span id = "playerSunkShip" style="color:red; font-size: 200%; font-family: 'Orbitron', sans-serif;"></span>
+    </span>
+    </div>
+
+
+    <div class="opponentSunkTitle">
+        <H3>Player Ships Sunk</H3>
+    </div>
+    <div class = "opponentSunkBox">
+    <span class="centerfloat">
+
+                <span id = "opponentSunkShip" style="color:red; font-size: 200%; font-family: 'Orbitron', sans-serif;"></span>
+    </span>
+    </div>
+
+
+    <div class="sonarPulse">
+        <button id="useSonarPulseButton">Activate Sonar Pulse</button>
+    </div>
+
+    <div class="moveFleetNorth">
+        <button id="moveFleetNorthButton">Move North</button>
+    </div>
+
+    <div class="moveFleetWest">
+        <button id="moveFleetWestButton">Move West</button>
+    </div>
+
+    <div class="moveFleetEast">
+        <button id="moveFleetEastButton">Move East</button>
+    </div>
+
+    <div class="moveFleetSouth">
+        <button id="moveFleetSouthButton">Move South</button>
+    </div>
+
+
+    <div class="shipMenu" id="shipMenu2">
+        <table align="center">
+            <tr>
+                <td><button id="place_minesweeper">Place Minesweeper</button></td>
+            </tr>
+            <tr>
+                <td><button id="place_destroyer">Place Destroyer</button></td>
+            </tr>
+            <tr>
+                <td><button id="place_battleship">Place Battleship</button></td>
+            </tr>
+            <tr>
+                <td><button id="place_submarine">Place Submarine</button></td>
+            </tr>
+            <tr>
+                <td id="vertical_word" align="left" > Vertical
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkboxVertical">
+                        <input type="checkbox" value="1" id="is_vertical" name=""/>
+                        <label for="is_vertical"></label>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+
+
+<!--Opponent Board(AIboard) block, which contains the grid, gird labels
+and a title-->
+<div class="AIboard">
+
+    <div id="AITitle" class="boardTitle">
+        <h1>OPPONENT</h1>
+    </div>
+
+    <table id="opponent" class="battleGrid">
+    </table>
+
+
+    <table class="gridCol">
+        <tr><td><b>1</b></td></tr>
+        <tr><td><b>2</b></td></tr>
+        <tr><td><b>3</b></td></tr>
+        <tr><td><b>4</b></td></tr>
+        <tr><td><b>5</b></td></tr>
+        <tr><td><b>6</b></td></tr>
+        <tr><td><b>7</b></td></tr>
+        <tr><td><b>8</b></td></tr>
+        <tr><td><b>9</b></td></tr>
+        <tr><td><b>10</b></td></tr>
+    </table>
+
+    <table class = "gridRow">
+        <td><b>A</b></td>
+        <td><b>B</b></td>
+        <td><b>C</b></td>
+        <td><b>D</b></td>
+        <td><b>E</b></td>
+        <td><b>F</b></td>
+        <td><b>G</b></td>
+        <td><b>H</b></td>
+        <td><b>I</b></td>
+        <td><b>J</b></td>
+    </table>
+
+</div>
+
+<script type="text/javascript" src="/assets/game.js"></script>
+<script>
+    initGame();
+</script>
+
+</@layout.myLayout>

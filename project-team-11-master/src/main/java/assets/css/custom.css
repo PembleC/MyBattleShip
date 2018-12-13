@@ -1,0 +1,440 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+
+/*body tag which contains the background of the web-page*/
+body {
+    background-image: url("http://st.gde-fon.com/wallpapers_original/584119_metall_tekstura_zaklepki_4000x4000_www.Gde-Fon.com.jpg"), url("paper.gif");
+     background-repeat: no-repeat, repeat;
+     background-size: cover;
+     background-attachment: fixed;
+
+}
+
+.battleGrid {
+    background-image: url("https://soulerfloat.com/wp-content/uploads/2018/01/floating-water-gif.gif");
+    box-shadow: inset 0 6px 10px 0 rgba(255, 0, 0, 0.8), 0 6px 10px 0 rgba(255, 0, 0, 0.8);
+    border-spacing: 0px;
+}
+
+/*-------------------Create a different background for the sub board, grid will stay the same---*/
+.subBoard {
+    background-image url("https://media.giphy.com/media/GwTZ1tYBesJ5S/giphy.gif")
+    box-shadow: inset 0 6px 10px 0 rgba(255, 0, 0, 0.8), 0 6px 10px 0 rgba(255, 0, 0, 0.8);
+    border-spacing: 0px;
+}
+
+.battleGrid tr {
+    border: 1px solid black;
+    height: 30px;
+
+}
+
+.battleGrid td {
+    border: 1px solid black;
+    width: 30px;
+}
+
+
+/* Might need to remove this */
+td:hover {
+    background-color: gray;
+}
+
+.placed {
+    background-color: gray;
+}
+
+.occupied {
+    background-color: black;
+}
+
+.hit {
+    background-color: rgb(254, 150, 22);
+}
+
+.hitCQ {
+    background-color: rgb(254, 150, 22);
+}
+
+.sink {
+    background-color: rgb(254, 33, 29);
+}
+
+.miss {
+    background-color: rgb(4, 73, 204);
+}
+
+/*for Sonar*/
+.spotted {
+	background-color: rgb(91, 14, 14);
+}
+
+/*for Sonar*/
+.empty{
+	background-color: rgb(208, 207, 207);
+}
+
+/* Removes the old checkbox -*/
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Creates the New Sexy checkbox */
+.checkboxVertical {
+    width: 60px;
+    height: 20px;
+    background: #333;
+
+    border-radius: 25px;
+    position: relative;
+}
+
+.checkboxVertical:before {
+    content: 'On';
+    position: absolute;
+    top: 6px;
+    left: 6.5px;
+    height: 1px;
+    color: #26ca28;
+    font-size: 8px;
+}
+
+.checkboxVertical:after {
+    content: 'Off';
+    position: absolute;
+    top: 6px;
+    left: 42px;
+    height: 1px;
+    color: #111;
+    font-size: 8px;
+}
+
+.checkboxVertical label {
+    display: block;
+    width: 25px;
+    height: 11px;
+    border-radius: 25px;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 6px;
+    background: #ddd;
+}
+
+.checkboxVertical input[type=checkbox]:checked + label {
+    left: 30px;
+    background: #26ca28;
+}
+
+/*Creates a new new sexy check box for the submarine surface toggle*/
+.checkboxSub {
+    width: 60px;
+    height: 20px;
+    background: #333;
+
+    border-radius: 25px;
+    position: relative;
+    display: none;
+}
+
+
+.checkboxSub:before {
+    content: 'On';
+    position: absolute;
+    top: 6px;
+    left: 6.5px;
+    height: 1px;
+    color: #26ca28;
+    font-size: 8px;
+}
+
+.checkboxSub:after {
+    content: 'Off';
+    position: absolute;
+    top: 6px;
+    left: 42px;
+    height: 1px;
+    color: #111;
+    font-size: 8px;
+}
+
+.checkboxSub label {
+    display: block;
+    width: 25px;
+    height: 11px;
+    border-radius: 25px;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 6px;
+    background: #ddd;
+}
+
+.checkboxSub input[type=checkbox]:checked + label {
+    left: 30px;
+    background: #26ca28;
+}
+
+/*sergCode*/
+/*--------HEADER BLOCK----------------*/
+header{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    height: 18%;
+    width: 90%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;*/
+}
+
+
+/*--------userBoard block----------------*/
+.userBoard{
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    height: 60%;
+    width: 35%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: purple;*/
+
+
+}
+
+/*--------------Submerged board-----------------------*/
+.subBoard {
+   display:none;
+    /*-Initially hide the submarine gird-*/
+}
+
+
+/*--------AIboard block----------------*/
+.AIboard{
+     position: absolute;
+     top: 13%;
+     left: 55%;
+
+     height: 60%;
+     width: 35%;
+
+     /*border: 1px solid black;
+     outline-style: solid;
+     outline-color: blue;*/
+
+}
+
+/*--------Shared classes of userBoard & AIboard blocks----------------*/
+.boardTitle{
+    position:absolute;
+    top: 5%;
+    left: 25%;
+
+    height: 12%;
+    width: 50%;
+
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: darkblue;*/
+}
+
+.battleGrid{
+    position:absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.boardTitle h1{
+    text-align: center;
+    font-size: 300%;
+    color: black;
+    font-family: monospace;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.gridCol{
+    position: absolute;
+    top: 25%;
+    left: 19%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: darkblue;*/
+}
+
+.gridCol tr{
+  height: 28px;
+  text-align: center;
+
+}
+
+.gridRow{
+    position: absolute;
+    top: 19%;
+    left: 25%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: darkred;*/
+}
+.gridRow td{
+    width: 30px;
+    text-align: center;
+}
+
+/*--------scoreArea block----------------*/
+.scoreArea{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    height: 60%;
+    width: 20%;
+
+     /*border: 1px solid black;
+     outline-style: solid;
+     outline-color: yellow;*/
+
+}
+
+.scoreTitle{
+    position:absolute;
+    top: 7%;
+    left: 0%;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
+
+}
+
+.scoreBox{
+    position:absolute;
+    top: 17%;
+    left: 40%;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: green;*/
+}
+
+
+.playerSunkTitle{
+    position:absolute;
+    top: 27%;
+    left: 0%;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
+
+}
+
+.playerSunkBox{
+    position:absolute;
+    top: 34%;
+    left: 40%;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+
+    }
+
+
+.opponentSunkTitle{
+    position:absolute;
+    top: 42%;
+    left: 0%;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
+
+}
+
+.opponentSunkBox{
+    position:absolute;
+    top: 49%;
+    left: 40%;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+
+    }
+
+/*  Needs Adjusting */
+.sonarPulse{
+    position:absolute;
+    top: 62%;
+    left: 37%;
+    height: 10%;
+    width: 20%;
+    text-align: center;
+
+    }
+
+
+.shipMenu{
+    position:absolute;
+    top:57%;
+    left: 25%;
+    height: 20%;
+    width: 20;
+
+     /*border: 1px solid black;
+     outline-style: solid;
+     outline-color: purple;*/
+
+}
+
+/*-------FOOTER BLOCK---------*/
+footer{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    height: 15%;
+    width: 90%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: pink;*/
+
+}
+
+
+.makeInfo{
+    position:absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+
+    /*border: 1px solid black;
+    outline-style: solid;
+    outline-color: green;*/
+}
