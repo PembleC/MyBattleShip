@@ -9,6 +9,7 @@ I forked this repo from my team's previous version of this game: https://github.
 * [Maven Framework](https://maven.apache.org/guides/introduction/introduction-to-plugins.html)
 
 
+## Getting Started
 ### Configuring InteliJ IDEA and Importing Maven-based Projects:
 1) Clone this repository to your local system.
 
