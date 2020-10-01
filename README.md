@@ -9,12 +9,12 @@ I forked this repo from my team's previous version of this game: https://github.
 ### Built With
 * [InteliJ](https://www.jetbrains.com/idea/)
 * [Ninja Framework](https://github.com/ninjaframework/ninja)
-* [Google Maps](https://www.google.com/maps/)
+* [Maven Framework](https://maven.apache.org/guides/introduction/introduction-to-plugins.html)
 
 
 ## Screenshots
 #### Main Start Screen <br/>
-<img src="img/home.png" alt="Main Screen" width="550" height="900">
+<img src="project-team-11-master/img/home.png" alt="Main Screen" width="900" height="700">
 
 
 
