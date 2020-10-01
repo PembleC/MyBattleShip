@@ -1,18 +1,15 @@
 # My BattleShip Game
-After class additions for our Software Engineering project
-
-
 A much better and improved version of the Battlefield game. This started off as a project for my OSU CS361 course, but grew into more of a passion project.
 I forked this repo from my team's previous version of this game: https://github.com/cs361fall2018/project-team-11
 
 
-### Built With
+### Built With:
 * [InteliJ](https://www.jetbrains.com/idea/)
 * [Ninja Framework](https://github.com/ninjaframework/ninja)
 * [Maven Framework](https://maven.apache.org/guides/introduction/introduction-to-plugins.html)
 
 
-### Configuring InteliJ IDEA and Importing Maven-based Projects
+### Configuring InteliJ IDEA and Importing Maven-based Projects:
 1) Clone this repository to your local system.
 
 2) Download and install [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/#section=windows).
@@ -35,6 +32,21 @@ I forked this repo from my team's previous version of this game: https://github.
 10) Once added, select the Project option under the Project Settings group on the left-hand side of the window. Select the drop-down menu under Project SDK in the main pane and a 10 or similarly named instance of the Java SDK should be available; select it and click OK.
 
 Your project should now be properly configured for development and use from within IntelliJ IDEA.
+
+### Compiling Projects with IntelliJ IDEA:
+1) Open the Edit Configuration menu from the drop-down button in the upper right-hand corner of window.
+
+2) Within the Run/Debug Configurations window that appears, click the + button and select Maven from the drop-down menu.
+
+3) Enter a name for the new Configuration that we are creating. Also, within the Command line field, enter ninja:run.
+
+4) At the bottom of the Run/Debug Configurations window is a section called Before launch: Activate tool window. Click the + button and select Run Maven Goal.
+
+5) Within the Select Maven Goal dialog that appears, enter clean into the Command line field, and click OK.
+
+6) Complete steps 4 and 5 again, except with compile in the Command line field. This should result in two Maven Goals being listed, clean and then compile, in that order.
+
+Everything for your new Configuration should be set, select OK on the Run/Debug Configurations window. You should now see the name of your new Configuration within the drop-down in the upper right-hand corner of the IntelliJ IDEA window. You can run your new Configuration by selecting play arrow button.
 
 
 ## Screenshots
