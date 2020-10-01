@@ -14,8 +14,15 @@ I forked this repo from my team's previous version of this game: https://github.
 
 ## Screenshots
 #### Main Start Screen <br/>
-<img src="project-team-11-master/img/home.png" alt="Main Screen" width="900" height="700">
-
+<img src="project-team-11-master/img/home.png" alt="Main Screen" width="1000" height="500">
+#### Start of Ships <br/>
+<img src="project-team-11-master/img/placeships.png" alt="Start Place" width="1000" height="500">
+#### Placing Ships <br/>
+<img src="project-team-11-master/img/midplace.png" alt="Mid-Place" width="1000" height="500">
+#### Early Game <br/>
+<img src="project-team-11-master/img/earlygame.png" alt="Early Game" width="1000" height="500">
+#### Sonar Pulse Weapon <br/>
+<img src="project-team-11-master/img/sonarpulse.png" alt="Sonar" width="1000" height="500">
 
 
 ## Contributing
